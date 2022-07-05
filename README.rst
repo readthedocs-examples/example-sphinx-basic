@@ -1,7 +1,7 @@
 Example: Basic Sphinx project for Read the Docs
 ===============================================
 
-This example shows the following basic integration with Read the Docs. You're encouraged to view it to get inspiration and copy & paste from the files in the source code.
+This example shows the an integration of a basic Sphinx project with Read the Docs. You're encouraged to view it to get inspiration and copy & paste from the files in the source code. If you are using Read the Docs for the first time, have a look at the official `Read the Docs Tutorial <https://docs.readthedocs.io/en/stable/tutorial/index.html>`_.
 
 📚 `docs/ <https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/docs/>`_
     A basic Sphinx project lives in ``docs/``, it was generated using Sphinx defaults
@@ -11,6 +11,8 @@ This example shows the following basic integration with Read the Docs. You're en
     Python dependencies are `pinned <https://docs.readthedocs.io/en/latest/guides/reproducible-builds.html>`_ (uses `pip-tools <https://pip-tools.readthedocs.io/en/latest/>`_)
 💡 `docs/api.rst <https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/docs/api.rst>`_
     By listing the Python module ``lumache`` in ``autosummary``, Sphinx will automatically scan this module and generate API docs.
+💡 `docs/usage.rst <https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/docs/usage.rst>`_
+   Sphinx can automatically extract API documentation directly from Python modules, using for instance ``autofunction``.
 💡 `lumache.py <https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/lumache.py>`_
     API docs are generated for this example Python module - they use *docstrings* directly in the documentation, notice how this shows up in the rendered documentation.
 🔢 Git tags versioning
