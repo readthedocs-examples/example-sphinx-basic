@@ -9,8 +9,10 @@ This example shows the following basic integration with Read the Docs. You're en
     Read the Docs Build configuration is stored in ``.readthedocs.yaml`` (configuration-as-code)
 📍 `docs/requirements.txt <https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/docs/requirements.txt>`_ and `docs/requirements.in <https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/docs/requirements.in>`_
     Python dependencies are `pinned <https://docs.readthedocs.io/en/latest/guides/reproducible-builds.html>`_ (uses `pip-tools <https://pip-tools.readthedocs.io/en/latest/>`_)
+💡 `docs/api.rst <https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/docs/api.rst>`_
+    By listing the Python module ``lumache`` in ``autosummary``, Sphinx will automatically scan this module and generate API docs.
 💡 `lumache.py <https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/lumache.py>`_
-    Auto-generated API docs for an example Python module, uses your *docstrings* directly in documentation
+    API docs are generated for this example Python module - they use *docstrings* directly in the documentation, notice how this shows up in the rendered documentation.
 🔢 Git tags versioning
     A basic versioning mechanism with git tags.
 📜 `README.rst <https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/README.rst>`_
