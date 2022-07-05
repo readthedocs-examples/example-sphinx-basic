@@ -1,16 +1,22 @@
 Example: Basic Sphinx project for Read the Docs
 ===============================================
 
-This example shows the following basic integration with Read the Docs:
+This example shows the following basic integration with Read the Docs. You're encouraged to view it to get inspiration and copy & paste from the files in the source code.
 
-* A basic Sphinx project lives in ``docs/`` 📚
-* Read the Docs Build configuration is stored in ``.readthedocs.yaml`` ⚙️
-* Python dependencies are `pinned <https://docs.readthedocs.io/en/latest/guides/reproducible-builds.html>`_ 📍
-* Auto-generated API docs for a Python module called ``lumache`` 💡
-* Sphinx documentation integrates Python docstrings directly from ``lumache`` 💡
-* A basic versioning mechanism with git tags 🔢
-* Contents of this ``README.rst`` are visible on Github and included on `the documentation index page <https://example-sphinx-basic.readthedocs.io/en/latest/>`_ (Don't Repeat Yourself) 📜
-* If you have questions related to this example, feel free to can ask them as a Github issue `here <https://github.com/readthedocs-examples/example-sphinx-basic/issues>`_. ⁉️
+📚 `docs/ <https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/docs/>`_
+    A basic Sphinx project lives in ``docs/``, it was generated using Sphinx defaults
+⚙️ `.readthedocs.yaml <https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/.readthedocs.yaml>`_
+    Read the Docs Build configuration is stored in ``.readthedocs.yaml`` (configuration-as-code)
+📍 `docs/requirements.txt <https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/docs/requirements.txt>`_ and `docs/requirements.in <https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/docs/requirements.in>`_
+    Python dependencies are `pinned <https://docs.readthedocs.io/en/latest/guides/reproducible-builds.html>`_ (uses `pip-tools <https://pip-tools.readthedocs.io/en/latest/>`_)
+💡 `lumache.py <https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/lumache.py>`_
+    Auto-generated API docs for an example Python module, uses your *docstrings* directly in documentation
+🔢 Git tags versioning
+    A basic versioning mechanism with git tags.
+📜 `README.rst <https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/README.rst>`_
+    Contents of this ``README.rst`` are visible on Github and included on `the documentation index page <https://example-sphinx-basic.readthedocs.io/en/latest/>`_ (Don't Repeat Yourself)
+⁉️ Questions / comments
+    If you have questions related to this example, feel free to can ask them as a Github issue `here <https://github.com/readthedocs-examples/example-sphinx-basic/issues>`_.
 
 
 Sphinx Example Project usage
@@ -27,7 +33,9 @@ You can build and view this documentation project locally - you may want to acti
 
     # Enter the Sphinx project
     cd docs/
-    make html
+    
+    # Run the raw sphinx-build command
+    sphinx-build -M html . _build/
 
 
 You can also build the documentation locally with ``make``:
@@ -40,7 +48,7 @@ You can also build the documentation locally with ``make``:
     # Build with make
     make html
     
-    # Open with your preferred browser
+    # Open with your preferred browser, pointing it to the documentation index page
     firefox _build/html/index.html
 
 
