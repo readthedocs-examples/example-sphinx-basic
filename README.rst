@@ -28,7 +28,7 @@ This example shows the an integration of a basic Sphinx project with Read the Do
 Sphinx Example Project usage
 ----------------------------
 
-This project has a very normal Sphinx layout which is built by the Read the Docs platform almost the same way that you would build it locally (on your own laptop!).
+This project has a standard Sphinx layout which is built by Read the Docs almost the same way that you would build it locally (on your own laptop!).
 
 You can build and view this documentation project locally - we recommend that you activate `a local Python virtual environment first <https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment>`_:
 
