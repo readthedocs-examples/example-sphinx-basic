@@ -30,7 +30,7 @@ Sphinx Example Project usage
 
 This project has a very normal Sphinx layout which is built by the Read the Docs platform almost the same way that you would build it locally (on your own laptop!).
 
-You can build and view this documentation project locally - you may want to activate `a local Python virtual environment firstly <https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment>`_:
+You can build and view this documentation project locally - we recommend that you activate `a local Python virtual environment first <https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment>`_:
 
 .. code-block:: console
 
@@ -75,4 +75,5 @@ If you are copying this code in order to get started with your documentation, yo
 Read the Docs tutorial
 ----------------------
 
-To get started with Read the Docs, you may also refer to the `Read the Docs tutorial <https://docs.readthedocs.io/en/stable/tutorial/>`_
+To get started with Read the Docs, you may also refer to the `Read the Docs tutorial <https://docs.readthedocs.io/en/stable/tutorial/>`_.
+It provides a full walk-through of building an example project similar to the one in this repository.
