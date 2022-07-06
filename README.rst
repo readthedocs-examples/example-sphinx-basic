@@ -8,7 +8,7 @@ This example shows the an integration of a basic Sphinx project with Read the Do
 📚 `docs/ <https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/docs/>`_
     A basic Sphinx project lives in ``docs/``, it was generated using Sphinx defaults
 ⚙️ `.readthedocs.yaml <https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/.readthedocs.yaml>`_
-    Read the Docs Build configuration is stored in ``.readthedocs.yaml`` (configuration-as-code)
+    Read the Docs Build configuration is stored in ``.readthedocs.yaml``
 📍 `docs/requirements.txt <https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/docs/requirements.txt>`_ and `docs/requirements.in <https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/docs/requirements.in>`_
     Python dependencies are `pinned <https://docs.readthedocs.io/en/latest/guides/reproducible-builds.html>`_ (uses `pip-tools <https://pip-tools.readthedocs.io/en/latest/>`_)
 💡 `docs/api.rst <https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/docs/api.rst>`_
