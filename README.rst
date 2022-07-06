@@ -1,9 +1,13 @@
 Example: Basic Sphinx project for Read the Docs
 ===============================================
 
+.. image:: https://readthedocs.org/projects/example-sphinx-basic/badge/?version=latest
+    :target: https://example-sphinx-basic.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
+
 .. This README.rst should work on Github and is also included in the Sphinx documentation project in docs/ - therefore, README.rst uses absolute links for most things so it renders properly on GitHub
 
-This example shows the an integration of a basic Sphinx project with Read the Docs. You're encouraged to view it to get inspiration and copy & paste from the files in the source code. If you are using Read the Docs for the first time, have a look at the official `Read the Docs Tutorial <https://docs.readthedocs.io/en/stable/tutorial/index.html>`_.
+This example shows the an integration of a basic Sphinx project with Read the Docs. You're encouraged to view it to get inspiration and copy & paste from the files in the source code. If you are using Read the Docs for the first time, have a look at the official `Read the Docs Tutorial <https://docs.readthedocs.io/en/stable/tutorial/index.html>`__.
 
 📚 `docs/ <https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/docs/>`_
     A basic Sphinx project lives in ``docs/``, it was generated using Sphinx defaults. All the ``*.rst`` make up sections in the documentation.
@@ -75,5 +79,5 @@ If you are copying this code in order to get started with your documentation, yo
 Read the Docs tutorial
 ----------------------
 
-To get started with Read the Docs, you may also refer to the `Read the Docs tutorial <https://docs.readthedocs.io/en/stable/tutorial/>`_.
+To get started with Read the Docs, you may also refer to the `Read the Docs tutorial <https://docs.readthedocs.io/en/stable/tutorial/>`__.
 It provides a full walk-through of building an example project similar to the one in this repository.
