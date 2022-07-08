@@ -7,14 +7,16 @@ Example: Basic Sphinx project for Read the Docs
 
 .. This README.rst should work on Github and is also included in the Sphinx documentation project in docs/ - therefore, README.rst uses absolute links for most things so it renders properly on GitHub
 
-This example shows the an integration of a basic Sphinx project with Read the Docs. You're encouraged to view it to get inspiration and copy & paste from the files in the source code. If you are using Read the Docs for the first time, have a look at the official `Read the Docs Tutorial <https://docs.readthedocs.io/en/stable/tutorial/index.html>`__.
+This example shows a basic Sphinx project with Read the Docs. You're encouraged to view it to get inspiration and copy & paste from the files in the source code. If you are using Read the Docs for the first time, have a look at the official `Read the Docs Tutorial <https://docs.readthedocs.io/en/stable/tutorial/index.html>`__.
 
 📚 `docs/ <https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/docs/>`_
-    A basic Sphinx project lives in ``docs/``, it was generated using Sphinx defaults. All the ``*.rst`` make up sections in the documentation.
+    A basic Sphinx project lives in ``docs/``. All the ``*.rst`` make up sections in the documentation.
 ⚙️ `.readthedocs.yaml <https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/.readthedocs.yaml>`_
     Read the Docs Build configuration is stored in ``.readthedocs.yaml``.
+⚙️ `docs/conf.py <https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/docs/conf.py>`_
+    Both the configuration and the folder layout follow Sphinx default conventions. You can change the `Sphinx configuration values <https://www.sphinx-doc.org/en/master/usage/configuration.html>`_ in this file
 📍 `docs/requirements.txt <https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/docs/requirements.txt>`_ and `docs/requirements.in <https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/docs/requirements.in>`_
-    Python dependencies are `pinned <https://docs.readthedocs.io/en/latest/guides/reproducible-builds.html>`_ (uses `pip-tools <https://pip-tools.readthedocs.io/en/latest/>`_).
+    Python dependencies are `pinned <https://docs.readthedocs.io/en/latest/guides/reproducible-builds.html>`_ (uses `pip-tools <https://pip-tools.readthedocs.io/en/latest/>`_). Make sure to add your Python dependencies to ``requirements.txt`` or if you choose [pip-tools](https://pip-tools.readthedocs.io/en/latest/), edit ``docs/requirements.in`` and remember to run ``pip-compile docs/requirements.in``.
 💡 `docs/api.rst <https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/docs/api.rst>`_
     By adding our example Python module ``lumache`` in the reStructuredText directive ``:autosummary:``, Sphinx will automatically scan this module and generate API docs.
 💡 `docs/usage.rst <https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/docs/usage.rst>`_
@@ -29,8 +31,8 @@ This example shows the an integration of a basic Sphinx project with Read the Do
     If you have questions related to this example, feel free to can ask them as a Github issue `here <https://github.com/readthedocs-examples/example-sphinx-basic/issues>`_.
 
 
-Sphinx Example Project usage
-----------------------------
+Example Project usage
+---------------------
 
 This project has a standard Sphinx layout which is built by Read the Docs almost the same way that you would build it locally (on your own laptop!).
 
@@ -69,11 +71,13 @@ If you are new to Read the Docs, you may want to refer to the `Read the Docs Use
 
 If you are copying this code in order to get started with your documentation, you need to:
 
-* Create a new repository on Github, GitLab, Bitbucket or another host supported by Read the Docs
-* Customize all ``docs/*.rst`` files
-* Add your own Python project, replacing the ``pyproject.toml`` configuration and ``lumache.py`` module.
-* Rebuild the documenation locally to see that it works.
-* Register your project on Read the Docs, see `Importing Your Documentation <https://docs.readthedocs.io/en/stable/intro/import-guide.html>`_.
+#. place your ``docs/`` folder alongside your Python project. If you are starting a new project, you can adapt the `pyproject.toml` example configuration.
+#. use your existing project repository or create a new repository on Github, GitLab, Bitbucket or another host supported by Read the Docs
+#. copy ``.readthedocs.yaml`` and the ``docs/`` folder into your project.
+#. customize all the files, replacing example contents.
+#. add your own Python project, replacing the ``pyproject.toml`` configuration and ``lumache.py`` module.
+#. rebuild the documenation locally to see that it works.
+#. *finally*, register your project on Read the Docs, see `Importing Your Documentation <https://docs.readthedocs.io/en/stable/intro/import-guide.html>`_.
 
 
 Read the Docs tutorial
