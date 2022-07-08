@@ -71,11 +71,13 @@ If you are new to Read the Docs, you may want to refer to the `Read the Docs Use
 
 If you are copying this code in order to get started with your documentation, you need to:
 
-* Create a new repository on Github, GitLab, Bitbucket or another host supported by Read the Docs
-* Customize all ``docs/*.rst`` files
-* Add your own Python project, replacing the ``pyproject.toml`` configuration and ``lumache.py`` module.
-* Rebuild the documenation locally to see that it works.
-* Register your project on Read the Docs, see `Importing Your Documentation <https://docs.readthedocs.io/en/stable/intro/import-guide.html>`_.
+#. place your ``docs/`` folder alongside your Python project. If you are starting a new project, you can adapt the `pyproject.toml` example configuration.
+#. use your existing project repository or create a new repository on Github, GitLab, Bitbucket or another host supported by Read the Docs
+#. copy ``.readthedocs.yaml`` and the ``docs/`` folder into your project.
+#. customize all the files, replacing example contents.
+#. add your own Python project, replacing the ``pyproject.toml`` configuration and ``lumache.py`` module.
+#. rebuild the documenation locally to see that it works.
+#. *finally*, register your project on Read the Docs, see `Importing Your Documentation <https://docs.readthedocs.io/en/stable/intro/import-guide.html>`_.
 
 
 Read the Docs tutorial
