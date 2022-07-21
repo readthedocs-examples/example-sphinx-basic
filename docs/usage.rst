@@ -1,6 +1,13 @@
 Usage
 =====
 
+Hello!
+
+.. example:: Example title
+
+   Here's my **example**!
+
+
 .. _installation:
 
 Installation
